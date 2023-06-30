@@ -4,6 +4,20 @@
     }
 }
 
+@keyframes driveCar {
+    100% {
+        transform: translateY(-1px);
+    }
+
+    50% {
+        transform: translateY(2px);
+    }
+
+    0% {
+        transform: translateY(-1px);
+    }
+}
+
 .move {
     animation: moveRight 6s linear infinite forwards;
 }
@@ -49,6 +63,13 @@ main {
 
 .car {
     position: absolute;
+    right: 60%;
     bottom: 10%;
-    transform: translateX(300px);
+    animation: driveCar 1s linear infinite;
+}
+
+@media screen and (max-width: 600px) {
+    .road {
+        width: 1000%;
+    }
 }
