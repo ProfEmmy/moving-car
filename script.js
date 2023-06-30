@@ -7,8 +7,10 @@ document.addEventListener("keydown", e => {
     if (e.code == "Space") {
         if (road.style.animationPlayState == "paused") {
             road.style.animationPlayState = "running"
+            car.classList.add("drive")
         } else {
             road.style.animationPlayState = "paused"
+            car.classList.remove("drive")
         }
     }
 

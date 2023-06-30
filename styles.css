@@ -22,6 +22,10 @@
     animation: moveRight 6s linear infinite forwards;
 }
 
+.drive {
+    animation: driveCar 1s linear infinite;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -63,9 +67,8 @@ main {
 
 .car {
     position: absolute;
-    right: 60%;
+    left: 20%;
     bottom: 10%;
-    animation: driveCar 1s linear infinite;
 }
 
 @media screen and (max-width: 600px) {
